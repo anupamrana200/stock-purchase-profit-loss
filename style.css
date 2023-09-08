@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+
+input{
+    display: block;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    margin-bottom: 2rem;
+}
