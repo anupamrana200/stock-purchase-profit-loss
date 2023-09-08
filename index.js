@@ -2,9 +2,7 @@ const initialPrice = document.querySelector("#initial-price");
 const quantity = document.querySelector("#quantity");
 const currentPrice = document.querySelector("#current-price");
 const tellMeBtn = document.querySelector("#tell-me-btn");
-const outputProfit = document.querySelector(".outputProfit");
-const outputLoss = document.querySelector(".outputLoss");
-const outputEqual = document.querySelector(".outputEqual");
+const output = document.querySelector(".output");
 
 function tellMeBtnHandler(){
     if(initialPrice.value && quantity.value && currentPrice.value) {
@@ -29,13 +27,13 @@ function calculateProfitLoss(initialPrice, quantity, currentPrice){
 function showOutput(returnMoney, percent, stat){
     if(stat === "PROFIT"){
         var msg = "🤑AMEZING!! You are in PROFIT With "+ percent+"%  Profit Money: ₹"+returnMoney;
-        outputProfit.innerText = msg;
+        output.innerText = msg;
     } else if(stat === "LOSS"){
         var msg = "😔OOPS!! You are in LOSS With "+ percent+"%  LOSS Money: ₹"+returnMoney;
-        outputLoss.innerText = msg;
+        output.innerText = msg;
     } else {
         var msg = "😑NO GAIN NO PAIN!! NO PAIN NO GAIN!!😑 "
-        outputLoss.innerText = msg;
+        output.innerText = msg;
     }
 }
 

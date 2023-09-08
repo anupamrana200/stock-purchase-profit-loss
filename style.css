@@ -1,11 +1,44 @@
+:root{
+    --primary-color: #1d4ed8;
+    --secondary-color: #dbeafe;
+}
+
 body{
     text-align: center;
+    background-color: var(--secondary-color);
+}
+
+label{
+    font-weight: bold;
+    font-size: large;
 }
 
 input{
     display: block;
     text-align: center;
-    width: auto;
+    padding: 0.5rem;
+    width: 30vh;
     margin: auto;
     margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    border: 2.3px solid var(--primary-color);
 }
+
+button{
+    padding: 0.4rem;
+    width: 7rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.output{
+    font-weight: bold;
+    font-size: large;
+}
+
